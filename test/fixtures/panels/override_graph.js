@@ -68,4 +68,4 @@ module.exports = {
     'x-axis': true,
     'y-axis': true,
     y_formats: ['short', 'short']
-}
+};
