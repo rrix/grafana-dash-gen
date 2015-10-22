@@ -16,6 +16,8 @@ test('simple graph', function t(assert) {
 test('graph with overriden information', function t(assert) {
     var graph = new Graph({
         span: 4,
+        fill: 0,
+        nullPointMode: 'connected',
         title: 'custom title',
         targets: ['target']
     });
