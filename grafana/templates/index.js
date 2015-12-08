@@ -19,7 +19,9 @@
 // THE SOFTWARE.
 
 var Custom = require('./custom');
+var Query = require('./query');
 
 module.exports = {
-    Custom: Custom
+    Custom: Custom,
+    Query: Query
 };

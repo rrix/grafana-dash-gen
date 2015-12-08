@@ -71,8 +71,13 @@ Dashboard.prototype._initTemplating = function _initRows(opts) {
 
     if (opts.templating) {
         opts.templating.forEach(function temp(template) {
-            template = new Templates.Custom(template);
-            self.addTemplate(template);
+            if (template.type === "query") {
+                template = new Templates.Query(template);
+                self.addTemplate(template);
+            } else {
+                template = new Templates.Custom(template);
+                self.addTemplate(template);
+            }
         });
     }
 };
